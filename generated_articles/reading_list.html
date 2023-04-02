@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="../style.css">
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<title>Personal Website</title>
+		<meta name="description" content="My personal website">
+		<meta name="author" content="Arthur Bricq">
+	</head>
+	<body>
+		<div id="header"></div>
+		<article>
+<h1>Reading List</h1><h2>Books to read</h2>Mostly Ordered List<br /><ul><li><strong>La horde du Contrevent</strong> by <strong>Damasio</strong></li><li><strong>Les furtifs</strong> by <strong>Damasio</strong></li><li><strong>Par-delà nature et culture</strong> by <strong>Descola</strong></li><li><strong>Animal</strong>, by <strong>Cyril Dion</strong></li><li><strong>Dune 1</strong>, by <strong>Frank Herbert</strong></li><li><strong>Demain</strong>, by <strong>Cyril Dion</strong></li></ul>
+		</article>
+		<script>
+$(function(){
+	$.get("../header.html", function(data){
+		$("#header").replaceWith(data);
+	});
+});
+		</script>
+	</body>
+</html>
