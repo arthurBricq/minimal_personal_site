@@ -10,7 +10,7 @@ $(function(){
 // Loads all of the projects
 const projects_list = document.getElementById("projects_list");
 const projects_sections = document.getElementById("projects_sections");
-const root_projects_path = './data/projects/';
+const root_projects_path = 'data/projects/';
 
 
 // Find all projects using JQuery
