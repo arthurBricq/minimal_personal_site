@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<link href="/style.css" rel="stylesheet" type="text/css"/>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width" name="viewport"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<title>Personal Website</title>
+<meta content="My personal website" name="description"/>
+<meta content="Arthur Bricq" name="author"/>
+</head>
+<body>
+<!--Header section that is dynmically loaded-->
+<div id="header"></div>
+<article>
+<div id="content">
+<h1>Robottle</h1>
+<p>Robottle was made for an academic event hosted at EPFL, where autonomous robots have to collect plastic bottles in a random environement and bring them back to a recycling area.</p>
+<p>Our robot featured <strong>states of the art</strong> technologies, including a <strong>Lidar</strong> to run <strong>SLAM</strong> algorithm, a camera with <strong>Deep Neural Network</strong> for object recognition. You can see more about our robot with this video that we made to illustrate our project.</p>
+<iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/XJpJSuhSZN4" width="560"></iframe>
+<p>After I was contacted by NVIDEA developer teams, Robottle became a showcased project and gained its own little referenced on the NVIDEA official <a href="website">https://developer.nvidia.com/embedded/community/jetson-projects#robottle</a></p>
+</div>
+</article>
+<!--Script that loads the header-->
+<script>
+$(function(){
+	$.get("../header.html", function(data){
+		$("#header").replaceWith(data);
+	});
+});
+		</script>
+</body>
+</html>

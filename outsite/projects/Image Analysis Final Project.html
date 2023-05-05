@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<link href="/style.css" rel="stylesheet" type="text/css"/>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width" name="viewport"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<title>Personal Website</title>
+<meta content="My personal website" name="description"/>
+<meta content="Arthur Bricq" name="author"/>
+</head>
+<body>
+<!--Header section that is dynmically loaded-->
+<div id="header"></div>
+<article>
+<div id="content">
+<h1>Image Analysis Course Project</h1>
+<p>The work involved to work with videos in Python, <strong>Object Extraction</strong> using state of the art computer vision to detect numbers and operators on the ground and <strong>Object Classification</strong> using a tuned Neural Network that is color independant and rotation invariant, using several Deep Learning methods.</p>
+</div>
+</article>
+<!--Script that loads the header-->
+<script>
+$(function(){
+	$.get("../header.html", function(data){
+		$("#header").replaceWith(data);
+	});
+});
+		</script>
+</body>
+</html>

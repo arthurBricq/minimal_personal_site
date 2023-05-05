@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<link href="/style.css" rel="stylesheet" type="text/css"/>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width" name="viewport"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<title>Personal Website</title>
+<meta content="My personal website" name="description"/>
+<meta content="Arthur Bricq" name="author"/>
+</head>
+<body>
+<!--Header section that is dynmically loaded-->
+<div id="header"></div>
+<article>
+<div id="content">
+<h1>My old personal website</h1>
+<p>This website was something I had in my mind since a long time. Doing it fully in React was really a great opportunity. </p>
+</div>
+</article>
+<!--Script that loads the header-->
+<script>
+$(function(){
+	$.get("../header.html", function(data){
+		$("#header").replaceWith(data);
+	});
+});
+		</script>
+</body>
+</html>
