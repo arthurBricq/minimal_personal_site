@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<link href="/style.css" rel="stylesheet" type="text/css"/>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width" name="viewport"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<title>Personal Website</title>
+<meta content="My personal website" name="description"/>
+<meta content="Arthur Bricq" name="author"/>
+</head>
+<body>
+<!--Header section that is dynmically loaded-->
+<div id="header"></div>
+<article>
+<div id="content">
+<h1>About the Beauty of Snow</h1>
+<p>Here are some pictures that I have taken, probably during ski touring sessions. </p>
+<p>I find snowy landscapes to be one of the most calming and powerful views nature has to give. Snow is the illustration of a choc, a contrast, an intersection that is creating this appeasing tension : the danger of the fresh snow and the calm of the winter. It reminds the viewer of its small size, the power of the surroudings is never higher. Yet, a humble passenger will pass, cross the landscapes and leave a trace behind.</p>
+<p><img alt="" src="../images/snow/img1.JPEG"/>
+<img alt="" src="../images/snow/img2.JPEG"/>
+<img alt="" src="../images/snow/img3.JPEG"/>
+<img alt="" src="../images/snow/img4.JPEG"/>
+<img alt="" src="../images/snow/img5.JPEG"/>
+<img alt="" src="../images/snow/img6.JPEG"/>
+<img alt="" src="../images/snow/img7.JPEG"/>
+<img alt="" src="../images/snow/img8.JPG"/></p>
+</div>
+</article>
+<!--Script that loads the header-->
+<script>
+$(function(){
+	$.get("../header.html", function(data){
+		$("#header").replaceWith(data);
+	});
+});
+		</script>
+</body>
+</html>

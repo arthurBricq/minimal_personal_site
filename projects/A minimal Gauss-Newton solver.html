@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<link href="/style.css" rel="stylesheet" type="text/css"/>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width" name="viewport"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<title>Personal Website</title>
+<meta content="My personal website" name="description"/>
+<meta content="Arthur Bricq" name="author"/>
+</head>
+<body>
+<!--Header section that is dynmically loaded-->
+<div id="header"></div>
+<article>
+<div id="content">
+<h1>Minimal Gauss-Newton solver</h1>
+<p>I did this super simple solver to explore the mechanics of the Gauss-Newton algorithm in need of understanding. This was the result of this work. The only depandency is <code>numpy</code> and it is absolutely easy to use it.</p>
+</div>
+</article>
+<!--Script that loads the header-->
+<script>
+$(function(){
+	$.get("../header.html", function(data){
+		$("#header").replaceWith(data);
+	});
+});
+		</script>
+</body>
+</html>

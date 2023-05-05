@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<link href="/style.css" rel="stylesheet" type="text/css"/>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width" name="viewport"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<title>Personal Website</title>
+<meta content="My personal website" name="description"/>
+<meta content="Arthur Bricq" name="author"/>
+</head>
+<body>
+<!--Header section that is dynmically loaded-->
+<div id="header"></div>
+<article>
+<div id="content">
+<h1>InTrek, a Strava-like multi-sport application</h1>
+<p>This project was done for a course at EPFL. In a team of 3 students, we developed an mobile app over Android to be your 'hiking partner'. </p>
+<p><img alt="" src="../images/intrek0.png"/></p>
+<p>The app featured a connection with a <strong>smart-watch</strong> to record data such as <strong>chocs</strong> or <strong>average acceleration</strong>. It also used GPS data to compute <strong>speeds</strong> or <strong>distances</strong>. Here are some layouts from the user experience !</p>
+<p><img alt="" src="../images/intrek3.png"/></p>
+</div>
+</article>
+<!--Script that loads the header-->
+<script>
+$(function(){
+	$.get("../header.html", function(data){
+		$("#header").replaceWith(data);
+	});
+});
+		</script>
+</body>
+</html>

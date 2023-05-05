@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<link href="/style.css" rel="stylesheet" type="text/css"/>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width" name="viewport"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<title>Personal Website</title>
+<meta content="My personal website" name="description"/>
+<meta content="Arthur Bricq" name="author"/>
+</head>
+<body>
+<!--Header section that is dynmically loaded-->
+<div id="header"></div>
+<article>
+<div id="content">
+<h1>Reading List</h1>
+<h2>Books to read</h2>
+<p>Mostly Ordered List</p>
+<ul>
+<li><strong>La horde du Contrevent</strong> by <strong>Damasio</strong></li>
+<li><strong>Les furtifs</strong> by <strong>Damasio</strong></li>
+<li><strong>Par-delà nature et culture</strong> by <strong>Descola</strong></li>
+<li><strong>Animal</strong>, by <strong>Cyril Dion</strong></li>
+<li><strong>Dune 1</strong>, by <strong>Frank Herbert</strong></li>
+<li><strong>Demain</strong>, by <strong>Cyril Dion</strong></li>
+</ul>
+</div>
+</article>
+<!--Script that loads the header-->
+<script>
+$(function(){
+	$.get("../header.html", function(data){
+		$("#header").replaceWith(data);
+	});
+});
+		</script>
+</body>
+</html>

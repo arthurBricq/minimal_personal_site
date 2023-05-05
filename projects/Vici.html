@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<link href="/style.css" rel="stylesheet" type="text/css"/>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width" name="viewport"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<title>Personal Website</title>
+<meta content="My personal website" name="description"/>
+<meta content="Arthur Bricq" name="author"/>
+</head>
+<body>
+<!--Header section that is dynmically loaded-->
+<div id="header"></div>
+<article>
+<div id="content">
+<h1>The Vici project (hackathon)</h1>
+<p>Vici was realized in a lapse time of 3 days, by the end of the weekend there was a fully functionable iOS app, a website done classicaly (HTML + JS + CSS) and a Python server coded in Django running on a rapsberry pi. Unfortunately, this project wasn't kept alive much longer after the hackathon though you can still access its project page at this <a href="https://devpost.com/software/vici">link</a>. </p>
+<p>I was in charge of many parts of this project, from ideation to almots all of the iOS programming. The only thing that i didn't take part of was the website development.</p>
+<p>Also, feel free to check this video presenting the project !</p>
+<iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/t6okgj3G-gM" width="560"></iframe>
+</div>
+</article>
+<!--Script that loads the header-->
+<script>
+$(function(){
+	$.get("../header.html", function(data){
+		$("#header").replaceWith(data);
+	});
+});
+		</script>
+</body>
+</html>
