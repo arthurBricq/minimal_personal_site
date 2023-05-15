@@ -1,26 +1,18 @@
 # Minimal Personal Website
 
-A personal website that uses JS without packages to create (and easily update) a markdown-based website.
+A very minimal personal webpage creator that you can fully customize.
 
-## TODO
+## To push your code
 
-- Projets page
-	- Add all projects
+```console
+# Generate the site
+python3 generate_site.py
 
-- Styling
-	- Background color with two colors
+# push to github...
+git add outsite
+git commit ....
+git push
 
-- Refactor files
-
-## Generate articles
-
-If you want to generate articles that have their own webpage, use the following:
-
-`node create_article.js`
-
-## Live Server for development 
-
-To install: `npm install live-server -g.`
-
-To run: `live-server .`
-
+# Command to push the git branch
+git subtree push --prefix outsite origin gh-pages
+```
