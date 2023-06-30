@@ -5,14 +5,22 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width" name="viewport"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <title>Personal Website</title>
 <meta content="My personal website" name="description"/>
 <meta content="Arthur Bricq" name="author"/>
 </head>
 <body>
 <!--Header section that is dynmically loaded-->
-<div id="header"></div>
+<div class="header_container" id="header_container">
+<header>
+    Arthur Bricq
+</header>
+<nav>
+<a href="../writings.html">Writing</a>
+<a href="../projects.html">Projects</a>
+<a href="../index.html">About</a>
+</nav>
+</div>
 <article>
 <div id="content">
 <h1>Chess Engine in C++</h1>
@@ -23,13 +31,5 @@
 - The tree search of the solver, well, is quite a big tree. I have implemented alpha-beta prunning search, and it works pretty well !</p>
 </div>
 </article>
-<!--Script that loads the header-->
-<script>
-$(function(){
-	$.get("../header.html", function(data){
-		$("#header").replaceWith(data);
-	});
-});
-		</script>
 </body>
 </html>

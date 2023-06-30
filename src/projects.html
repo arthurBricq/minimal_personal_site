@@ -4,9 +4,6 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
-		<!--This is a reference to the jquery scripts-->
-		<!--https://stackoverflow.com/a/49607452/13219173-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<!--This is for equations-->
 		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -15,7 +12,7 @@
 		<meta name="author" content="Arthur Bricq">
 	</head>
 	<body>
-		<div id="header"></div>
+		<div id="header_container" class="header_container"></div>
 
 		<article>
 			<h1>Personal Projects</h1>
@@ -28,13 +25,5 @@
 			</div>
 		</article>
 
-		<!--Script that loads the header-->
-		<script>
-$(function(){
-	$.get("./header.html", function(data){
-		$("#header").replaceWith(data);
-	});
-});
-		</script>
 	</body>
 </html>

@@ -5,14 +5,22 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width" name="viewport"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <title>Personal Website</title>
 <meta content="My personal website" name="description"/>
 <meta content="Arthur Bricq" name="author"/>
 </head>
 <body>
 <!--Header section that is dynmically loaded-->
-<div id="header"></div>
+<div class="header_container" id="header_container">
+<header>
+    Arthur Bricq
+</header>
+<nav>
+<a href="../writings.html">Writing</a>
+<a href="../projects.html">Projects</a>
+<a href="../index.html">About</a>
+</nav>
+</div>
 <article>
 <div id="content">
 <h1>Chess Engine in Rust</h1>
@@ -20,13 +28,5 @@
 <p>With this engine, I choose a memory efficient representation of a chess-board: 7 integers are sufficient to represent a full chess position (including the special rules for castling and for en-passant). Using such a low-memory approach, it's extremely cheap to perform deep copies of chess games and therefore have a simple chess solver.</p>
 </div>
 </article>
-<!--Script that loads the header-->
-<script>
-$(function(){
-	$.get("../header.html", function(data){
-		$("#header").replaceWith(data);
-	});
-});
-		</script>
 </body>
 </html>

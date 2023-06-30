@@ -4,16 +4,13 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 		<title>Personal Website</title>
 		<meta name="description" content="My personal website">
 		<meta name="author" content="Arthur Bricq">
 	</head>
 	<body>
 		<!--Header will be loaded here-->
-		<div id="header"></div>
+		<div id="header_container" class="header_container"></div>
 
 		<article>
 
@@ -28,13 +25,5 @@
 
 		</article>
 
-		<!--Script that loads the header-->
-		<script>
-$(function(){
-	$.get("./header.html", function(data){
-		$("#header").replaceWith(data);
-	});
-});
-		</script>
 	</body>
 </html>

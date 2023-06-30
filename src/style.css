@@ -1,31 +1,31 @@
 body {
-  margin: 0 auto;
-  max-width: 900px;
-  min-width: 0;
-  padding: 0 10px 25px;
-  font-family: "Lucida Console", Helvetica, Arial, sans-serif;
-  background-color: #f8f9fa;
+	margin: 0 auto;
+	max-width: 900px;
+	min-width: 0;
+	padding: 0 10px 25px;
+	font-family: "Lucida Console", Helvetica, Arial, sans-serif;
+	background-color: #f8f9fa;
 }
 
 /* Laying out */
 
 h2 {
-  margin-top: 1em;
-  padding-top: 1em;
+	margin-top: 1em;
+	padding-top: 1em;
 }
 
 nav a {
-  margin-left: 20px;
+	margin-left: 20px;
 }
 
 /* Font colors*/
 
 body {
-  color: #444;
+	color: #444;
 }
 
 h1, h2, strong {
-  color: #222;
+	color: #222;
 }
 
 blockquote {
@@ -36,97 +36,84 @@ blockquote {
 /* Links color */
 
 a {
-  color: #ffa64d;
+	color: #ffa64d;
 }
 
 /* Font size */
 
-header {
-  margin: 0px;
-  font-size: 22px;
-}
+
 nav {
-  font-size: 22px;
-  letter-spacing: 1px;
+	font-size: 22px;
+	letter-spacing: 1px;
 }
 
 article {
-  font-size: 16px;
+	font-size: 16px;
 }
 h1 {
-  font-size: 40px;
+	font-size: 40px;
 }
 h2 {
-  font-size: 32px;
+	font-size: 32px;
 }
 h3 {
-  font-size: 24px;
+	font-size: 24px;
 }
 
 
-/*CSS Grid*/
+/*Properties of the main elements*/
 
-body {
-  display: grid;
-  row-gap: 5px;
-  grid-template-columns: auto auto;
-  grid-template-rows: 60px auto;
-  grid-template-areas:
-    "header nav"
-    "ct ct"
+article {
+	border-top: 2px solid gray;
+}
+
+.header_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 60px;
 }
 
 header {
-  grid-area: header;
-  justify-self: left;
-  align-self: end;
-  position: fixed;
+	font-size: 22px;
+	justify-self: left;
 }
 
 nav {
-  grid-area: nav;
-  justify-self: right;
-  align-self: end;
+	margin-right: 10px;
+	justify-self: flex-end;
 }
 
-nav a {
-  text-align: right;
-
-}
-
-article {
-  grid-area: ct;
-  border-top: 2px solid gray;
-}
 
 /*Images */
 
 img {
-  border-radius: 0px;
-  max-width: 700px;
-  max-height: 500px;
-  border: 0px solid #ddd;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
+	border-radius: 0px;
+	max-width: 700px;
+	max-height: 500px;
+	border: 0px solid #ddd;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
 }
 
 iframe {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 40px;
-  padding-bottom: 40px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 /*Line break */
 
 br {
-  content: "";
-  margin: 2em;
-  display: block;
-  font-size: 24%;
+	content: "";
+	margin: 2em;
+	display: block;
+	font-size: 24%;
 }
 
 
@@ -136,15 +123,6 @@ br {
 	font-size: 24px;
 }
 
-
-/*For images */
-
-.header {
-	/*display: grid;*/
-	grid-template-columns: auto auto;
-	grid-template-rows: 60px auto;
-	background-color: yellow;
-}
 
 /*Article page*/
 
