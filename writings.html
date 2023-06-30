@@ -15,12 +15,12 @@
 <article>
 <h1>Some things I've written</h1>
 <div id="article_list">
-<li class="project_item"><a href="/writings/Personal Reading List.html">Personal Reading List</a> </li><p class="description">My list of books to read</p><li class="project_item"><a href="/writings/The beauty of snow.html">The beauty of snow</a> </li><p class="description">Pictures of snow taken by me</p></div>
+<li class="project_item"><a href="./writings/Personal Reading List.html">Personal Reading List</a> </li><p class="description">My list of books to read</p><li class="project_item"><a href="./writings/The beauty of snow.html">The beauty of snow</a> </li><p class="description">Pictures of snow taken by me</p></div>
 </article>
 <!--Script that loads the header-->
 <script>
 $(function(){
-	$.get("/header.html", function(data){
+	$.get("./header.html", function(data){
 		$("#header").replaceWith(data);
 	});
 });

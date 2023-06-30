@@ -19,7 +19,6 @@
 <img src="images/arthur1.jpeg"/>
 </div>
 <div id="markdown_container">
-<p>Hello world</p>
 <h3>More about me</h3>
 <p>I am a <strong>software engineer</strong> working with robot's localisation, especially with mapping and localisation alogithms. Languages where I am the most at ease includes C++, Java &amp; Python. Lately, I have been discovering Rust and loved the experience. I have also done in my past a some Javascript, Matlab, and quite a bit of Swift in my earliest programming experiences. This is my <strong>personal-website</strong>, for sharing personal stuffs as well as projects that I have liked doing.</p>
 <p>I am a nature lover, pretty scared about our future due to the climate crisis. Here, you'll find informations about projects that I have done, some ways to contact me, and (maybe if I have time) some thoughts and opinions that I have to share.</p>
@@ -51,7 +50,7 @@
 <!--Script that loads the header-->
 <script>
 $(function(){
-	$.get("/header.html", function(data){
+	$.get("./header.html", function(data){
 		$("#header").replaceWith(data);
 	});
 });
