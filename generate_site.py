@@ -74,7 +74,7 @@ class PageBuilder:
     def create_html_link(self, _meta, _soup):
         title = _meta['title']
         html_list = ''
-        html_list += '<li class="project_item"><a href="/{}/{}.html">{}</a> </li>'.format(self._name, title, title);
+        html_list += '<li class="project_item"><a href="./{}/{}.html">{}</a> </li>'.format(self._name, title, title);
         if ('github' in _meta):
             html_list += '<p class="description">Link to <a href="{}">Github</a></p>'.format(_meta['github']);
         if ('keywords' in _meta):

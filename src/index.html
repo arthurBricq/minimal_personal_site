@@ -24,7 +24,6 @@
 			</div>
 
 			<div id="markdown_container">
-				<p>Hello world</p>
 			</div>
 
 		</article>
@@ -32,7 +31,7 @@
 		<!--Script that loads the header-->
 		<script>
 $(function(){
-	$.get("/header.html", function(data){
+	$.get("./header.html", function(data){
 		$("#header").replaceWith(data);
 	});
 });
