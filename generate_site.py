@@ -29,6 +29,7 @@ def get_header(root = ".") -> str:
 </header>
 
 <nav>
+    <a href="{root}/resume.pdf">My resume</a>
     <a href="{root}/writings.html">Writing</a>
     <a href="{root}/projects.html">Projects</a>
     <a href="{root}/index.html">About</a>
@@ -59,7 +60,7 @@ class PageBuilder:
         """
         Add a project to the page's content
         * meta contains information about the project
-        * soup contains the parsed 
+        * soup contains the parsed
         """
         # create html div with a link to the project's page.
         tag = self.create_html_link(_meta)
@@ -104,15 +105,21 @@ class PageBuilder:
                 self._name, title, title
             )
         )
+        if "keywords" in _meta:
+            html_list += '<p class="keyword">{}</p>'.format(_meta["keywords"])
         if "github" in _meta:
             html_list += (
                 '<p class="description">Link to <a href="{}">Github</a></p>'.format(
                     _meta["github"]
                 )
             )
-        if "keywords" in _meta:
-            html_list += '<p class="keyword">keywords: {}</p>'.format(_meta["keywords"])
+
+        # Add the description
         html_list += '<p class="description">{}</p>'.format(_meta["description"])
+        # Add the image
+        if "featuredImage" in _meta:
+            html_list += '<img src="{}" class="thumbnail">'.format(_meta["featuredImage"])
+
         tag = bs4.BeautifulSoup(html_list, "html.parser")
         return tag
 
@@ -243,3 +250,4 @@ if __name__ == "__main__":
     # cp header and style
     shutil.copyfile("src/header.html", "outsite/header.html")
     shutil.copyfile("src/style.css", "outsite/style.css")
+    shutil.copyfile("src/resume.pdf", "outsite/resume.pdf")
