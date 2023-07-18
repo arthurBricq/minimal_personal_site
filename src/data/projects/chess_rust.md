@@ -3,7 +3,7 @@ title: Chess Engine in Rust
 keywords: [Chess, Rust]
 description: A fully functional Chess Engine written completely from scratch in Rust
 priority: 1
-featuredImage: ../images/chess_engine.png
+featuredImage: images/chess_engine.png
 github: https://github.com/arthurBricq/chess_rust
 ---
 

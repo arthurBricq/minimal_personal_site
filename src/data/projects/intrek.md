@@ -3,7 +3,7 @@ title: InTrek
 keywords: [Java, Android, Mobile App]
 description: As you may have understood it, I like hiking. This is an Android App to track your recordings using GPS data and connected devices, then save them using Google's Cloud services.
 priority: 2
-featuredImage: ../images/intrek1.png
+featuredImage: images/intrek1.png
 ---
 
 # InTrek, a Strava-like multi-sport application
