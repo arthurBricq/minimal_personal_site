@@ -62,13 +62,13 @@ impl &lt;'a&gt; Callback for Container &lt;'a&gt; {
 <pre><code class="language-rust">/// If you want another struct which has our trait as a field, this is one easy
 /// approach. However, each instance of `Boo` will only be able to have only 1 
 /// type of field `foo`.
-struct Boo <t: callback=""> {
+struct Boo &lt;T: Callback&gt; {
     foo: T
 }
 
 // The implementation of the struct with generic type is similar as for lifetime
 // specifiers. 
-impl<t: callback=""> Boo<t> {
+impl&lt;T: Callback&gt; Boo&lt;T&gt; {
     fn new(cb: T) -&gt; Self {
         Self {
             foo: cb
@@ -88,7 +88,7 @@ fn main() {
     let b = Boo::new(c);
     b.greet();
 }
-</t></t:></t:></code></pre>
+</code></pre>
 <h3>Using <code>Box</code></h3>
 <p>This approach is the better one if you want to change the callback during the lifetime of "foo". </p>
 <pre><code class="language-rust">
@@ -96,11 +96,11 @@ fn main() {
 /// is by using a box
 struct DynamicBoo {
     // A box is a unique pointer
-    foo: Box<dyn callback="">
+    foo: Box&lt;dyn Callback&gt;
 }
 
 impl DynamicBoo {
-    fn new(cb: Box<dyn callback="">) -&gt; Self {
+    fn new(cb: Box&lt;dyn Callback&gt;) -&gt; Self {
         Self {
             foo: cb
         }
@@ -115,7 +115,7 @@ fn main() {
     let d = DynamicBoo::new(Box::new(Container::new("coucou")));
     d.greet();
 }
-</dyn></dyn></code></pre>
+</code></pre>
 <p>Here is the <a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2021&amp;gist=0391a65d099601b3855c6732a63c6bec">link to rust playground</a> with this code.</p>
 </div>
 </article>

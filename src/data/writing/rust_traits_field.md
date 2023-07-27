@@ -48,13 +48,13 @@ Note that this way only works if the instance of the struct holding the callback
 <pre><code class="language-rust">/// If you want another struct which has our trait as a field, this is one easy
 /// approach. However, each instance of `Boo` will only be able to have only 1 
 /// type of field `foo`.
-struct Boo <T: Callback> {
+struct Boo &lt;T: Callback&gt {
     foo: T
 }
 
 // The implementation of the struct with generic type is similar as for lifetime
 // specifiers. 
-impl<T: Callback> Boo<T> {
+impl&lt;T: Callback&gt; Boo&lt;T&gt; {
     fn new(cb: T) -> Self {
         Self {
             foo: cb
@@ -85,11 +85,11 @@ This approach is the better one if you want to change the callback during the li
 /// is by using a box
 struct DynamicBoo {
     // A box is a unique pointer
-    foo: Box<dyn Callback>
+    foo: Box&lt;dyn Callback&gt;
 }
 
 impl DynamicBoo {
-    fn new(cb: Box<dyn Callback>) -> Self {
+    fn new(cb: Box&lt;dyn Callback&gt;) -> Self {
         Self {
             foo: cb
         }
