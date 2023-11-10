@@ -1,6 +1,8 @@
-# Minimal Personal Website
+# Minimal Personal Website Creator
 
-A very minimal personal webpage creator that you can fully customize.
+A minimal personal webpage creator that you can fully customize, written in python.
+
+I use this code to generate my personal website.
 
 ## To push your code
 

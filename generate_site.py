@@ -221,6 +221,8 @@ def create_page_with_children(
 
 
 if __name__ == "__main__":
+    print("Starting to generate site")
+
     # create project
     create_page_with_children(
         site_root="outsite/",
@@ -230,6 +232,8 @@ if __name__ == "__main__":
         page_container_id="projects_list",
         children_input_path="./src/data/projects",
     )
+
+    print("Projects generated successfully")
 
     # create writing page
     create_page_with_children(
@@ -241,8 +245,12 @@ if __name__ == "__main__":
         children_input_path="./src/data/writing",
     )
 
+    print("Articles generated successfully")
+
     # create main page
-    create_index_page("src/index.html", "src/data/text.md", "outsite/index.html")
+    create_index_page("src/index.html", "src/data/main_page.md", "outsite/index.html")
+
+    print("Main page generated successfully")
 
     # cp images into outsite
     copy_tree("src/images", "outsite/images")
@@ -251,3 +259,6 @@ if __name__ == "__main__":
     shutil.copyfile("src/header.html", "outsite/header.html")
     shutil.copyfile("src/style.css", "outsite/style.css")
     shutil.copyfile("src/resume.pdf", "outsite/resume.pdf")
+
+    print("ressources copied successfully")
+    print("finished")
