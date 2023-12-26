@@ -2,8 +2,8 @@
 title: Chess Engine in C++
 keywords: [Chess, C++]
 description: A fully functional Chess Engine written completely from scratch in C++
-priority: 1
-featuredImage: chess_engine.png
+priority: 2
+featuredImage: images/chess_engine.png
 github: https://github.com/arthurBricq/chess
 ---
 

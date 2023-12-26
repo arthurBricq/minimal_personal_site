@@ -2,7 +2,7 @@
 title: A minimal Gauss-Newton solver
 keywords: [Python]
 description: A fully functional yet minimal gauss newton solver
-priority: 2
+priority: 3
 github: https://github.com/arthurBricq/minimalGaussNewton
 ---
 
