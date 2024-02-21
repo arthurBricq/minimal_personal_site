@@ -1,5 +1,5 @@
 ---
-title: [Opinion] Opinion about unfinished projects
+title: Opinion about unfinished projects
 description: Or to how remain passionate about what we do as computer scientist
 priority: 1
 date: 2024-02-21
@@ -19,7 +19,7 @@ Beside being part of the learning-path, these projects are just fun. They are wh
 
 Please, share me with what you did not finish but were excited about enough to start it !
 
-# What about big code-base, what real software engineering ...
+# What about big code-base, real software engineering ...
 
 Of course that as a software developer, finishing the "last 10%" of projects is extremely important. It may as well be the hardest part. I believe this is what jobs are for ! In my experience at least, **working as a software engineer means working on the last 10% while considering the first 90% as a de-facto condition for every development**.
 
