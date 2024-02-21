@@ -10,7 +10,7 @@ I am a **software engineer** coming from the world of robot's localization, but 
 
 ### Even more about me
 
-I am passionate about what I do: programming and computer-science. I like the most Rust and C++ but really, any kind of programming is cool. In the last few years, I programmed in my free time **two chess engines** with a UI to play with them, a **text editor**, a **game-engine** (*my current personal project*), a **website generator** (*used to build this site*), participated in several coding challenges such as **advent-of-codes**, the google's FooBar challenge or Euler project.
+I am passionate about what I do: programming and computer-science. I like the most Rust and C++ but really, any kind of programming is cool. In the last few years, I programmed in my free time **two chess engines** with a UI to play with them, a **text editor**, a **3D game-engine**, a **website generator** (*used to build this site*), participated in several coding challenges such as **advent-of-codes**, the google's FooBar challenge or Euler project.
 
 In the rest of my free time, I like
 
