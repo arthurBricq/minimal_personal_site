@@ -26,12 +26,8 @@ Of course that as a software developer, finishing the "last 10%" of projects is 
 Here's what I think are the three stage of a programming project.
 
 <div class="image_container">
-<img src="images/personal-projects.png"/>
+<img src="../images/personal-projects.png"/>
 </div>
-
-Ok, and a little test...
-
-![ABC](../images/personal-projects.png)
 
 The last 10% requires a full-time job. It consists in a lot of bug-fixing, upgrading dependencies, and refactoring to include newer features. The first 50 to 60% is the *excitement zone*: it's like falling in love, everything is shiny, everything is possible, it only gets better. Until you hit the 60 to 90% zone, where most of my projects die. How many more days / commits / features I implement when I am there is really a matter of my perseverance, but usually it does not go for too long.
 
