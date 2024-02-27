@@ -198,7 +198,7 @@ def create_page_with_children(
         if md is None:
             print("ERROR opening one of the project: ", p)
 
-        # create html content
+        # parse the .md and format it as html
         html = markdown2.markdown(md, extras=["metadata"])
         meta = html.metadata
         projects.append({"html": html, "meta": meta})
