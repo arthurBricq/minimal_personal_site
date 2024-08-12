@@ -1,7 +1,7 @@
 ---
-title: My GameEngine in Rust
+title: CPU GameEngine written from scratch (in Rust)
 keywords: [Computer Graphics, Rust, Vision, Game Engine]
-description: A 3D world renderer written from scratch in Rust, without any vision library such as OpenGL or Vulkan. To be able to render thousands of polygons efficiently on the CPU, I implemented binary space partitioning.
+description: I wanted to see how difficult it would be to write an CPU equivalent of OpenGL. So here it is ! A 3D world renderer written from scratch in Rust, without any vision library such as OpenGL or Vulkan. To be able to render thousands of polygons efficiently on the CPU, I implemented binary space partitioning.
 priority: 1
 featuredImage: images/engine.png
 github: https://github.com/arthurBricq/GameEngine
