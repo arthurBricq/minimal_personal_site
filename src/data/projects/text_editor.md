@@ -2,7 +2,7 @@
 title: Text Editor from scratch, in Rust
 keywords: [Rust, Text, Challenge]
 description: I was looking for a challenging project that would at the same time ask for some software design challenges, and for optimal coding in Rust. Writing a vim-like text editor turned out to be the perfect projet.
-priority: 1
+priority: 2
 featuredImage: images/red.png
 github: https://github.com/arthurBricq/red
 ---
