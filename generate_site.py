@@ -6,21 +6,8 @@ import markdown2
 from pathlib import Path
 from distutils.dir_util import copy_tree
 import shutil
-import os
 
-
-def clear_folder(path):
-    """
-    Deletes a folder, then create it again.
-    """
-    # deletetion
-    try:
-        shutil.rmtree(path)
-        print(f"Folder {path} was successfully deleted")
-    except OSError as e:
-        print(f"Could not delete folder {path}: {e}")
-    # creation
-    os.makedirs(path)
+from utils import clear_folder
 
 def get_header(root = ".") -> str:
     return f"""
@@ -35,7 +22,6 @@ def get_header(root = ".") -> str:
     <a href="{root}/index.html">About</a>
 </nav>
     """
-
 
 class PageBuilder:
     """
@@ -124,7 +110,6 @@ class PageBuilder:
         return tag
 
 
-
 def create_index_page(
     template_path, content_path, output_path, container_id="markdown_container"
 ):
@@ -164,6 +149,7 @@ def create_index_page(
         file.write(str(soup))
 
 
+
 def create_page_with_children(
     site_root,
     page_name,
@@ -174,6 +160,14 @@ def create_page_with_children(
 ):
     """
     Creates a page with associated children pages, listed under this page.
+
+    Parameters:
+    site_root: Location where the page(s) will be saved
+    page_name: Name of the created page
+    page_template: Template to use for the main page
+    children_tmplate: Template to use for the children pages,
+    page_container_id: HTML id of the `div` to be expanded with the links to the children page
+    children_input_path: Where to find the ".md" files for the children
     """
     # read the project
     with Path(page_template).open() as data:
@@ -223,42 +217,42 @@ def create_page_with_children(
 if __name__ == "__main__":
     print("Starting to generate site")
 
-    # create project
+    SITE_ROOT = "./outsite"
+    SITE_DATA = "./data/"
+
+    # create project page
     create_page_with_children(
-        site_root="outsite/",
+        site_root=SITE_ROOT,
         page_name="projects",
         page_template="./src/projects.html",
         children_template="./src/children_template.html",
         page_container_id="projects_list",
-        children_input_path="./src/data/projects",
+        children_input_path=SITE_DATA + "projects",
     )
-
     print("Projects generated successfully")
 
     # create writing page
     create_page_with_children(
-        site_root="outsite/",
+        site_root=SITE_ROOT,
         page_name="writings",
         page_template="./src/writing.html",
         children_template="./src/children_template.html",
         page_container_id="article_list",
-        children_input_path="./src/data/writing",
+        children_input_path=SITE_DATA + "writing",
     )
-
     print("Articles generated successfully")
 
     # create main page
-    create_index_page("src/index.html", "src/data/main_page.md", "outsite/index.html")
-
+    create_index_page("src/index.html", SITE_DATA + "main_page.md",  SITE_ROOT + "/index.html")
     print("Main page generated successfully")
 
     # cp images into outsite
-    copy_tree("src/images", "outsite/images")
+    copy_tree(SITE_DATA + "images", SITE_ROOT + "/images")
 
     # cp header and style
-    shutil.copyfile("src/header.html", "outsite/header.html")
-    shutil.copyfile("src/style.css", "outsite/style.css")
-    shutil.copyfile("src/resume.pdf", "outsite/resume.pdf")
+    shutil.copyfile("src/header.html", SITE_ROOT + "/header.html")
+    shutil.copyfile("src/style.css", SITE_ROOT + "/style.css")
+    shutil.copyfile(SITE_DATA + "resume.pdf", SITE_ROOT + "/resume.pdf")
 
     print("ressources copied successfully")
     print("finished")
