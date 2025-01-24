@@ -163,7 +163,7 @@ def create_page_with_children(
     # create container with the html elements
     soup = bs4.BeautifulSoup(html_text, "html.parser")
     project_page = PageBuilder(
-        site_root, page_name, soup.find(id=page_container_id), children_template, header_getter
+        site_root + "/", page_name, soup.find(id=page_container_id), children_template, header_getter
     )
 
     # for all projects with a markdown description, add the project to the page's content.
@@ -171,6 +171,7 @@ def create_page_with_children(
     projects_file = [f for f in project_folder if f.is_file()]
     projects = []
     for p in projects_file:
+        print(p)
         # read file
         with p.open() as data:
             md = data.read()
@@ -195,6 +196,7 @@ def create_page_with_children(
     header_container.append(parsed)
 
     # Finally, save the project page
-    with open(site_root + page_name + ".html", "w") as file:
+    with open(site_root + "/" + page_name + ".html", "w") as file:
+        print(" --> Saving: " + site_root + "/" + page_name + ".html")
         file.write(str(soup))
 
