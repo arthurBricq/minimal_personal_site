@@ -1,9 +1,13 @@
 ---
-title: When machines became capable of executing the code that they generated
-description: Or when we entered a new era for accessibility to computing resources
+title: The Day AI Began Executing Its Self-Written Code
+description: Or when developers lost the exclusive power to execute code
 priority: 1
 date: 2025-01-24
 ---
+
+# The Day AI Began Executing Its Self-Written Code
+
+> Or when developers lost the exclusive power to execute code
 
 In the early days of computing, the only code you could execute was the code you wrote yourself.
 
@@ -58,3 +62,8 @@ Here's my take on this question: **AI will execute their generated code without 
 This step will come with unprecedented capabilities—and, inevitably, risks more dangerous than ever before. How humanity
 will handle these risks and embrace these advancements remains one of the many open questions only the future can
 answer.
+Here’s a revised and more polished version of that sentence:
+
+And I’ll end this quick article with one final question: have we, as developers, just lost a power that was once
+exclusively ours? If so, could it be because we’ve failed to emphasize the ethics of programming? After all, shouldn’t
+every great power come with equally great ethical responsibility?
