@@ -5,13 +5,27 @@ priority: 1
 date: 2023-02-25
 ---
 
+
 I read somewhere that keeping track of what you read is good for you. So here I go.
 
-# Reading List
+## 2025
+
+- **The Dark forest** (2/3) by *Liu Cixing*
+- **Death's End** (3/3) by *Liu Cixing*
 
 ## 2024
 
-- **Red Mars** by *Kim Stanley Robinson*
+- **Red Mars** (1/3) by *Kim Stanley Robinson*
+- **Green Mars** (2/3) by *Kim Stanley Robinson*
+- **Blue Mars** (3/3) by *Kim Stanley Robinson*
+- **Le Nom de la Rose** by *Umberto Eco*
+- **La zone du Dehors** by *Alain Damasio*
+- **Children of Time** (1/3) by *Adrian Tchaikovsky*
+- **Children of Ruin** (2/3) by *Adrian Tchaikovsky*
+- **Le Grand Monde** (1/3) by *Pierre Lemaitre*
+- **Le silence et la colère** (1/3) by *Pierre Lemaitre*
+- **The Three-Body Problem** (1/3) by *Liu Cixing*
+- **The dawn of Everything** by *David Graeber, David Wengrow*
 
 ## 2023
 
@@ -24,13 +38,4 @@ I read somewhere that keeping track of what you read is good for you. So here I 
 - **Petit manuel de résistance contemporaine** by *Cyril Dion*
 - **La horde du Contrevent** by *Damasio*
 - **The Lord of the Rings** by *Tolkien*
-
-# Books to read
-
-Mostly Ordered List
-
-- **Par-delà nature et culture** by *Descola*
-- **Animal**, by *Cyril Dion*
-- **Dune 1**, by *Frank Herbert*
-- **Demain**, by *Cyril Dion*
 
