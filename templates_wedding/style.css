@@ -1,31 +1,29 @@
 body {
 	margin: 0 auto;
-	max-width: 900px;
+	max-width: 600px;
 	min-width: 0;
 	padding: 0 10px 25px;
 	font-family: "Lucida Console", Helvetica, Arial, sans-serif;
-	background-color: #ffffff;
+	background-color: rgba(241, 204, 151, 0.62);
 }
 
-/* Laying out */
-
 h1 {
-    text-align: center;
+	text-align: center;
+	font-size: 40px;
 }
 
 h2 {
 	margin-top: 1em;
 	padding-top: 1em;
+	font-size: 32px;
 }
-
-/* Font colors*/
 
 body {
 	color: #444;
 }
 
 h1, h2, strong {
-	color: #222;
+	color: #8B4513;
 }
 
 blockquote {
@@ -33,37 +31,33 @@ blockquote {
 	font-style: italic;
 }
 
-/* Links color */
-
 a {
 	color: #ffa64d;
 }
 
-/* Font size */
-
 header {
 	font-size: 22px;
 }
-nav {
-	font-size: 22px;
-}
+
 article {
 	font-size: 16px;
+	margin-top: 100px;
 }
-h1 {
-	font-size: 40px;
-}
-h2 {
-	font-size: 32px;
-}
+
 h3 {
 	font-size: 24px;
+	font-weight: normal;
 }
 
-/*Properties of the main elements*/
+p {
+    font-size: 18px;
+    margin: 15px 0;
+    letter-spacing: 0.5px;
+    line-height: 1.7;
+}
 
-article {
-	margin-top: 100px;
+ul li {
+    margin-bottom: 15px; /* Adds 15px space between list items */
 }
 
 /*The header_container is the div that contain the header*/
@@ -79,7 +73,8 @@ article {
 	top: 0;
 	right: 0;
 	left: 0;
-	background-color: #ffffff;
+	width: 100%;
+	background-color: #f6dfbe;
 }
 
 header {
@@ -88,6 +83,7 @@ header {
 }
 
 nav {
+	font-size: 22px;
 	margin-right: 20px;
 	justify-self: flex-end;
 	letter-spacing: 1px;
@@ -95,14 +91,14 @@ nav {
 
 nav a {
 	margin-left: 20px;
+    text-decoration: none;
 }
-
 
 /*Images */
 
 img {
 	border-radius: 0px;
-	max-width: 400px;
+	max-width: 100%;
 	border: 0px solid #ddd;
 	display: block;
 	margin-left: auto;
@@ -132,41 +128,9 @@ br {
 	font-size: 24%;
 }
 
-
 .project_item {
 	list-style: square;
 	padding-top: 20px;
 	font-size: 24px;
 }
 
-
-/*Article page*/
-
-.date_box {
-	font-style: initial;
-}
-
-/*Projects Page*/
-
-.description {
-	font-style: italic;
-	padding-left: 50px;
-}
-
-.keyword {
-	font-weight: bold;
-	padding-left: 50px;
-}
-
-.new_project {
-	margin-bottom: 50px;
-	padding-bottom: 50px;
-	border-bottom: 2px solid gray;
-}
-
-pre code {
-  background-color: #eee;
-  border: 1px solid #999;
-  display: block;
-  padding: 0px;
-}
