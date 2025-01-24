@@ -5,6 +5,10 @@ from pathlib import Path
 from utils import clear_folder
 
 
+def _process_children_page_title(meta):
+    return meta["title"].replace(" ", "-")
+
+
 class PageBuilder:
     """
     A class to build an html page and all its related children pages.
@@ -26,20 +30,20 @@ class PageBuilder:
         self._header = header_getter
         clear_folder(site_root + page_name)
 
-    def add_children(self, _meta, _soup):
+    def add_children(self, meta, soup):
         """
         Add a project to the page's content
         * meta contains information about the project
         * soup contains the parsed
         """
         # create html div with a link to the project's page.
-        tag = self.create_html_link(_meta)
+        tag = self.add_html_link_to_parent_page(meta)
 
         # Modify the project page
         self._editor.append(tag)
 
         # Create a new page with the project's description
-        self._create_project_page(_meta, _soup)
+        self._create_project_page(meta, soup)
 
     def _create_project_page(self, _meta, _soup):
         # Load the template for children pages
@@ -63,12 +67,13 @@ class PageBuilder:
         header_container.append(parsed)
 
         # Save the file
-        title = _meta["title"]
+        title = _process_children_page_title(_meta)
         with open(self._root + self._name + f"/{title}.html", "w") as file:
             file.write(str(template))
 
-    def create_html_link(self, _meta):
-        title = _meta["title"]
+    def add_html_link_to_parent_page(self, _meta):
+        children_path = _process_children_page_title(_meta)
+        title = _process_children_page_title(_meta)
         html_list = ""
         html_list += (
             '<li class="project_item"><a href="./{}/{}.html">{}</a> </li>'.format(
@@ -160,34 +165,39 @@ def create_page_with_children(
     if html_text is None:
         print("ERROR opening project html")
 
-    # create container with the html elements
-    soup = bs4.BeautifulSoup(html_text, "html.parser")
-    project_page = PageBuilder(
-        site_root + "/", page_name, soup.find(id=page_container_id), children_template, header_getter
-    )
 
-    # for all projects with a markdown description, add the project to the page's content.
-    project_folder = Path(children_input_path).glob("**/*.md")
-    projects_file = [f for f in project_folder if f.is_file()]
-    projects = []
-    for p in projects_file:
-        print(p)
+    # for all children with a markdown description, add the project to the page's content.
+    children_folder = Path(children_input_path).glob("**/*.md")
+    children_file = [f for f in children_folder if f.is_file()]
+    children = []
+    for p in children_file:
         # read file
         with p.open() as data:
             md = data.read()
         if md is None:
             print("ERROR opening one of the project: ", p)
 
-        # parse the .md and format it as html
+        # Convert the markdown as an html file
         html = markdown2.markdown(md, extras=["metadata"])
-        meta = html.metadata
-        projects.append({"html": html, "meta": meta})
 
-    # sort the list of projects and add them to the parent page
-    projects = sorted(projects, key=lambda element: element["meta"]["priority"])
-    for p in projects:
-        parsed = bs4.BeautifulSoup(p["html"], "html.parser")
-        project_page.add_children(p["meta"], parsed)
+        # Save the html and the metadata in the list
+        # TODO the fields of "meta" should be parsed here... And put into a struct !
+        meta = html.metadata
+        children.append({"html": html, "meta": meta})
+
+    # sort the list of children and add them to the parent page
+    children = sorted(children, key=lambda element: element["meta"]["priority"])
+
+    # create container with the html elements
+    soup = bs4.BeautifulSoup(html_text, "html.parser")
+    project_page = PageBuilder(
+        site_root + "/", page_name, soup.find(id=page_container_id), children_template, header_getter
+    )
+
+    # for each child, add the html in the file
+    for p in children:
+        children_as_html = bs4.BeautifulSoup(p["html"], "html.parser")
+        project_page.add_children(p["meta"], children_as_html)
 
     # fill the header
     header_container = soup.find(id = "header_container")
