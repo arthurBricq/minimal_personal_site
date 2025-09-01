@@ -1,18 +1,21 @@
 # Organisation
 
-## How to get there
+## Dress code
 
-### By car
+🇫🇷 Il n’y a aucun dress code pour notre mariage à Castelvecchio, venez comme vous voulez :)
+Cependant, gardez à l’esprit qu’il pourrait faire très chaud, et que le village ne se prête pas aux talons hauts ni aux chaussures trop rigides ! 
 
-There is enough parking spot in Castelvecchio for everybody.
+Vous êtes prévenus !
 
-### Car-Sharing with other guests
+🇮🇹 Non c’è nessun tipo di dress code per il nostro matrimonio a Castelvecchio, venite come volete :)
+Tuttavia, tenete a mente che potrebbe fare molto caldo (uff), e che il paese non si presta a tacchi alti o scarpe troppo rigide! 
 
-We will share the list of all the invited guest on the **20th of January**
+Siete stati avvertiti!
 
-### By public transportation
+🇬🇧 There is no dress code for our wedding in Castelvecchio, come as you like :)
+However, keep in mind that it might be very hot (phew), and the village is not suitable for high heels or overly rigid shoes! 
 
-Direct bus from Albenga train station
+You have been warned!
 
 ## Where to sleep in the region
 

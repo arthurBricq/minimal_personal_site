@@ -12,6 +12,9 @@ I read somewhere that keeping track of what you read is good for you. So here I 
 
 - **The Dark forest** (2/3) by *Liu Cixing*
 - **Death's End** (3/3) by *Liu Cixing*
+- **Un avenir radieux** (3/3) by *Pierre Lemaitre*
+- **Voyage au bouut de la nuit** by *Louis Ferdinand Céline*
+- **The grapes of wrath** by *Louis Ferdinand Céline*
 
 ## 2024
 
@@ -23,7 +26,7 @@ I read somewhere that keeping track of what you read is good for you. So here I 
 - **Children of Time** (1/3) by *Adrian Tchaikovsky*
 - **Children of Ruin** (2/3) by *Adrian Tchaikovsky*
 - **Le Grand Monde** (1/3) by *Pierre Lemaitre*
-- **Le silence et la colère** (1/3) by *Pierre Lemaitre*
+- **Le silence et la colère** (2/3) by *Pierre Lemaitre*
 - **The Three-Body Problem** (1/3) by *Liu Cixing*
 - **The dawn of Everything** by *David Graeber, David Wengrow*
 

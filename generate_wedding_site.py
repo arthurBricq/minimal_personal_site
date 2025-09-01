@@ -15,10 +15,11 @@ def get_header(root = ".") -> str:
 
 <nav>
     <a href="{root}/index.html">Home</a>
-    <a href="{root}/rsvp.html">RSVP</a>
-    <a href="{root}/planning.html">Planning</a>
-    <a href="{root}/information.html">Information</a>
-    <a href="{root}/cv.html">Castelvecchio</a>
+    <a href="{root}/gifts.html">Gifts🎁</a>
+    <a href="{root}/getting-there.html">Getting There🛣️</a>
+    <a href="{root}/planning.html">Planning📅</a>
+    <a href="{root}/information.html">Information👗</a>
+    <a href="{root}/cv.html">Castelvecchio🌄</a>
 </nav>
     """
 
@@ -44,8 +45,15 @@ if __name__ == "__main__":
 
     create_index_page(
         template_path="templates_wedding/page.html",
-        content_path=SITE_DATA + "rsvp.md",
-        output_path=SITE_ROOT + "/rsvp.html",
+        content_path=SITE_DATA + "gift.md",
+        output_path=SITE_ROOT + "/gifts.html",
+        container_id="markdown_container",
+        header_getter=get_header)
+
+    create_index_page(
+        template_path="templates_wedding/page.html",
+        content_path=SITE_DATA + "getting-there.md",
+        output_path=SITE_ROOT + "/getting-there.html",
         container_id="markdown_container",
         header_getter=get_header)
 

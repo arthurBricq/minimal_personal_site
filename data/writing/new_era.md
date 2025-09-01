@@ -62,7 +62,6 @@ Here's my take on this question: **AI will execute their generated code without 
 This step will come with unprecedented capabilities—and, inevitably, risks more dangerous than ever before. How humanity
 will handle these risks and embrace these advancements remains one of the many open questions only the future can
 answer.
-Here’s a revised and more polished version of that sentence:
 
 And I’ll end this quick article with one final question: have we, as developers, just lost a power that was once
 exclusively ours? If so, could it be because we’ve failed to emphasize the ethics of programming? After all, shouldn’t
