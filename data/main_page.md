@@ -3,12 +3,22 @@
 I am a **software engineer** coming from the world of robot's localization, but at ease with all aspects of software
 engineering. Now, I am working in the field of distributed computing.
 
-Languages where I am the most at ease includes **C++, Java & Python**. My favorite language is **Rust**,
-with which I do all my side-projects.
+The language that I enjoy the most, that I do most side projects with, and that I work with, is **Rust**. I am also very
+at ease with **C++**, **Java** and **Python**.
 
 Here, you'll find some personal projects that I have done, some ways to contact me, and (maybe if I have time) some
 thoughts and opinions that I have to share (*As it happens, I am a nature lover that is pretty scared about our future
 due to the climate crisis and I would like to write about it*)
+
+### A pledge for writing useless projects
+
+This website can be seen as a portfolio, but I would rather see it as a memorial to all the time that I have spent 
+programing what I like to call "*my useless projects*".
+
+As you will find out if you look at my projects... I *really* like to rewrite stuffs from scratch in Rust. Especially
+if these things involves some games. Like chess, like minecraft, or like the gameboy. I am convinced that there is an
+incredible value in doing useless programming project that nobody will never use but that you have fun doing and looking
+back at. So here it is, I hope you enjoy these projects ! And here's to many useless projects.
 
 ### Personal links
 
