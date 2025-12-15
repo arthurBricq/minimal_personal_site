@@ -2,7 +2,6 @@
 A python script that generates your personal website
 """
 
-from distutils.dir_util import copy_tree
 import shutil
 
 from page_builder import create_index_page
@@ -63,7 +62,7 @@ if __name__ == "__main__":
     print("Main page generated successfully")
 
     # cp images into outsite
-    copy_tree(SITE_DATA + "images", SITE_ROOT + "/images")
+    shutil.copytree(SITE_DATA + "images", SITE_ROOT + "/images", dirs_exist_ok=True)
 
     # cp header and style
     shutil.copyfile("templates/header.html", SITE_ROOT + "/header.html")

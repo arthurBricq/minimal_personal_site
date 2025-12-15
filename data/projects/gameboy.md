@@ -1,0 +1,13 @@
+---
+title: Gameboy emulator in Rust
+keywords: [Chess, Rust]
+description: Again, written from scratch.
+priority: 1
+featuredImage: images/rboy.png
+github: https://github.com/chalune-dev/gameboy
+---
+
+# rboy: Gameboy Emulator
+
+
+Similarly as the minecraft clone, I have done this project with 3 other friends. We all played the gameboy as kid and thought it would be a great to try and rewrite a gameboy. So we took the gameboy specs, and started from there. It took us 4 days and a lot of hexadecimal debugging, but here it is !  
