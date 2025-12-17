@@ -14,7 +14,15 @@ I read somewhere that keeping track of what you read is good for you. So here I 
 - **Death's End** (3/3) by *Liu Cixing*
 - **Un avenir radieux** (3/3) by *Pierre Lemaitre*
 - **Voyage au bouut de la nuit** by *Louis Ferdinand Céline*
-- **The grapes of wrath** by *Louis Ferdinand Céline*
+- **The grapes of wrath** by *John Steinbeck*
+- **The dispossessed** by *Ursula K. Le Guin*
+- **The left hand of darkness** by *Ursula K. Le Guin*
+- **A Wizard of Earthsea** by *Ursula K. Le Guin*
+- **The tombs of Atuan** by *Ursula K. Le Guin*
+- **The farthest shore** by *Ursula K. Le Guin*
+- **Tehanu** by *Ursula K. Le Guin*
+- **Tales from Earthsea** by *Ursula K. Le Guin*
+- **The other wind** by *Ursula K. Le Guin*
 
 ## 2024
 
