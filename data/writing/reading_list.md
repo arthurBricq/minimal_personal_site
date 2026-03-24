@@ -8,6 +8,11 @@ date: 2023-02-25
 
 I read somewhere that keeping track of what you read is good for you. So here I go.
 
+## 2026
+
+- **Les misérables** by *Victor Hugo*
+- **Les belles promesses** by *Pierre Lemaitre*
+
 ## 2025
 
 - **The Dark forest** (2/3) by *Liu Cixing*
@@ -23,6 +28,7 @@ I read somewhere that keeping track of what you read is good for you. So here I 
 - **Tehanu** by *Ursula K. Le Guin*
 - **Tales from Earthsea** by *Ursula K. Le Guin*
 - **The other wind** by *Ursula K. Le Guin*
+- **L'étranger** by *Albert Camus*
 
 ## 2024
 
